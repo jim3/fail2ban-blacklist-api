@@ -58,4 +58,4 @@ The server executes `fail2ban-client get sshd banip` to retrieve currently banne
 
 ## Security Note
 
-The server requires sudo access to run fail2ban-client commands. Ensure proper sudoers configuration is in place for the application user.
+The server requires sudo access to run fail2ban-client commands. Ensure proper sudoers configuration is in place for the application.
