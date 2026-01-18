@@ -4,7 +4,7 @@ A lightweight Go HTTP server that exposes fail2ban's banned IP addresses via a J
 
 ## Overview
 
-This project demonstrates a real-world security monitoring solution by creating a public-facing API that serves the current list of IP addresses banned by fail2ban on a VPS. This allows external systems to query and retrieve the blacklist dynamically.
+A security monitoring API in Go to automate the export of real-time threat intelligence (banned IPs) on a VPS. This allows external systems to query and retrieve the blacklist dynamically.
 
 ## Architecture
 
