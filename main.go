@@ -20,7 +20,8 @@ func getBlacklist(w http.ResponseWriter, r *http.Request) {
 	output := exec.Command("sudo", "fail2ban-client", "get", "sshd", "banip")
 	out, err := output.Output()
 	if err != nil {
-		log.Fatal(err)
+		http.Error(w, "internal server error", http.StatusInternalServerError)
+		return
 	}
 
 	trimmed := strings.TrimSpace(string(out))
