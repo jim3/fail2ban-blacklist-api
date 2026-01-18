@@ -47,7 +47,7 @@ curl https://yourdomain.com/blacklist
 
 ## Technical Implementation
 
-The server executes `fail2ban-client get sshd banip` to retrieve currently banned IPs and marshals them into JSON format. The application runs on `localhost:8080` behind Caddy, which handles TLS termination and public-facing requests.
+The server executes `fail2ban-client get sshd banip` to retrieve currently banned IPs and marshals them into JSON format. The application runs on `localhost:8080` behind Caddy, which handles **TLS termination** and public-facing requests.
 
 ## Requirements
 
